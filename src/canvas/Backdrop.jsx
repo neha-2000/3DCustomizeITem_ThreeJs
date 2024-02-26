@@ -28,7 +28,7 @@ const Backdrop = () => {
       amount={4} 
       radius={9} 
       // intensity={13}
-      intensity={3}
+      intensity={3.5}
       ambient={0.25}
       position={[5,5,-10]}
        />

@@ -45,11 +45,32 @@ const Customizer = () => {
         readFile={readFile}
         />;
       case "aipicker":
-        return <AIPicker />;
+        return <AIPicker
+        prompt={prompt}
+        setPrompt={setPrompt}
+        generatingImg={generatingImg}
+        handleSubmit={handleSubmit}
+        
+        />;
       default:
         return null;
     }
   };
+
+  const handleSubmit=async (type)=>{
+    if(!prompt) return alert("Please enter a prompt")
+    try
+  {
+  }
+  catch(error){
+    alert(error)
+  }
+  finally{
+    setgeneratingImg(false);
+    setactiveEditorTab("")
+  }
+
+  }
   const handleDecals = (type, result) => {
     const decalType = DecalTypes[type];
     state[decalType.stateProperty] = result;
@@ -59,22 +80,30 @@ const Customizer = () => {
   };
 
   const handleActiveFilterTab = (tabName) => {
+    console.log("tabName",tabName)
     switch (tabName) {
       case "logoShirt":
           state.isLogoTexture = !activeFilterTab[tabName];
+          console.log("state.isLogoTexture",state.isLogoTexture,activeFilterTab[tabName] ,!activeFilterTab[tabName])
           break;
       case "stylishShirt":
           state.isFullTexture = !activeFilterTab[tabName];
+          console.log("state.isFullTexture ",state.isFullTexture)
           break;
       default :
           state.isLogoTexture = true;
           state.isFullTexture = false;
 
-
-
-
+         
+          break;
 
     }
+    setactiveFilterTab((prev)=>{
+      return{
+        ...prev,
+        [tabName]:!prev[tabName]
+      }
+    })
   };
 
   const readFile = (type) => {
@@ -130,9 +159,9 @@ const Customizer = () => {
                 key={tab.name}
                 tab={tab}
                 isFilterTab
-                isActiveTab=""
+                isActiveTab={activeFilterTab[tab.name]}
                 handleClick={() => {
-                  setactiveFilterTab(tab.name);
+                  handleActiveFilterTab(tab.name);
                 }}
               />
             ))}
