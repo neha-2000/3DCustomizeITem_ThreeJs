@@ -1,0 +1,247 @@
+  <group {...props} dispose={null}>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Coach.geometry}
+        material={materials.Fabrick}
+        position={[0.005, 0.218, -0.447]}
+      >
+       
+      
+
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Coushion_1.geometry}
+          material={materials.Fabrick}
+          position={[-0.983, 0.339, 0.055]}
+          rotation={[Math.PI, 0, Math.PI]}
+        >
+          {/* left first side cusion */}
+          {/* <Decal map={texture}
+            geometry={nodes.Coushion_1.geometry}
+            opacity={0.7}
+          
+       scale={5}
+       position={[0, 0, 0]}
+       rotation={[Math.PI, 0, Math.PI]}
+      
+      
+    />  */}
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Coushion_2.geometry}
+          material={materials.Fabrick}
+          position={[0.988, 0.341, 0.057]}
+          rotation={[Math.PI, 0, Math.PI]}
+        >
+         {" "}
+           {/* right first side cusion */}
+          <Decal map={texture}
+           geometry={nodes.Coushion_2.geometry}
+       scale={4}
+       position={[0, 0, 0]}
+       rotation={[Math.PI, 0, Math.PI]}
+       
+      
+      
+    /> 
+        
+         
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Legs.geometry}
+          material={materials.Metal}
+          position={[0, -0.084, 0]}
+          rotation={[0, Math.PI / 4, 0]}
+        >
+        {" "}
+     
+       
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pillow_1.geometry}
+          material={materials["fabrick pillow"]}
+          position={[-0.728, 0.447, -0.033]}
+          rotation={[1.255, 0.238, -0.625]}
+          scale={0.235}
+        >
+          {/* cusion 1 */}
+           {/* <Decal map={cusiontexture}
+              geometry={nodes.pillow_1.geometry}
+              position={[0, 0, 0]}
+          rotation={[1.255, 0.238, -0.625]}
+          scale={13}
+          material={new THREE.MeshStandardMaterial({ transparent: false, opacity: 1})}
+
+         />  */}
+         </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pillow_2.geometry}
+          material={materials["fabrick pillow 2"]}
+          position={[-0.38, 0.447, -0.092]}
+          rotation={[1.312, 0.137, -0.477]}
+          scale={0.202}
+        >
+          {/* cusion 2 */}
+       {/* <Decal map={cusiontexture}
+         geometry={nodes.pillow_2.geometry}
+            rotation={[1.255, 0.238, -0.625]}
+            scale={13}
+            position={[0, 0, 0]}
+            material={new THREE.MeshStandardMaterial({ transparent: false, opacity: 1 })}
+
+         />  */}
+         </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pillow_3.geometry}
+          material={materials["fabrick pillow 3"]}
+          position={[0.778, 0.405, -0.058]}
+          rotation={[1.428, -0.125, 0.711]}
+          scale={0.198}
+          >
+         {/* cusion 3 */}
+       {/* <Decal map={cusiontexture}
+        geometry={nodes.pillow_3.geometry}
+        position={[0, 0, 0]}
+          rotation={[1.428, -0.125, 0.711]}
+          scale={13}
+          // material={new THREE.MeshStandardMaterial({ transparent: false, opacity: 1/* other properties */ })}
+
+    />  */}
+    </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Seat_1.geometry}
+          material={materials.Fabrick}
+          position={[-0.695, 0.124, 0.033]}
+          rotation={[Math.PI, 0, Math.PI]}
+        >
+          {/* below first sofa foam */}
+         {/* <Decal map={texture}
+       scale={3}
+       geometry={nodes.Seat_1.geometry}
+         
+       position={[0, 0, 0]}
+          rotation={[Math.PI, 0, Math.PI]}
+      
+    />  */}
+    </mesh>
+
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Seat_2.geometry}
+          material={materials.Fabrick}
+          position={[0.003, 0.123, 0.033]}
+          rotation={[Math.PI, 0, Math.PI]}
+        >
+          {/* below first sofa foam 2 */}
+          {/* <Decal map={texture}
+       scale={2}
+       geometry={nodes.Seat_2.geometry}
+       position={[0, 0, 0]}
+       rotation={[Math.PI, 0, Math.PI]}
+      //  material={new THREE.MeshStandardMaterial({ side: THREE.DoubleSide, /* other properties */ })}
+
+      
+    />  */}
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Seat_3.geometry}
+          material={texture}
+          position={[0.698, 0.122, 0.034]}
+          rotation={[Math.PI, 0, Math.PI]}
+        >
+           {/* <Decal map={texture}
+       scale={2}
+       castShadow
+      //  material={materials.Fabrick}
+       receiveShadow
+       geometry={nodes.Seat_3.geometry}  
+       position={[0, 0, 0]}
+       rotation={[Math.PI, 0, Math.PI]} 
+      
+    /> */}
+        
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Spine_1.geometry}
+          material={materials.Fabrick}
+          position={[-0.711, 0.416, -0.304]}
+          rotation={[Math.PI, 0, Math.PI]}
+        >
+          {/* top seat 1 */}
+                    {/* <Decal map={texture}
+       scale={2.4}
+       castShadow
+       geometry={nodes.Spine_1.geometry}
+      //  material={materials.Fabrick}
+       receiveShadow
+       position={[0, 0, 0]}
+       rotation={[Math.PI, 0, Math.PI]}
+      
+    /> */}
+        
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Spine_2.geometry}
+          material={materials.Fabrick}
+          position={[-0.001, 0.417, -0.303]}
+          rotation={[Math.PI, 0, Math.PI]}
+        >
+            {/* top seat 2 */}
+            <Decal map={texture}
+       scale={2}
+       castShadow
+      //  material={materials.Fabrick}
+      geometry={nodes.Spine_2.geometry}
+       receiveShadow
+       position={[0, 0, 0]}
+          rotation={[Math.PI, 0, Math.PI]}
+      
+    />
+        
+        </mesh>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Spine_3.geometry}
+          material={materials.Fabrick}
+          position={[0.709, 0.418, -0.307]}
+          rotation={[Math.PI, 0, Math.PI]}
+        >
+           {/* top seat 3 */}
+           <Decal map={texture}
+       scale={2.4}
+       castShadow
+      //  material={materials.Fabrick}
+      geometry={nodes.Spine_3.geometry}
+       receiveShadow
+       position={[0, 0, 0]}
+       rotation={[Math.PI, 0, Math.PI]}
+       depthTest={false}
+
+      
+    />
+        </mesh>
+      
+      </mesh>
+    </group>

@@ -1,0 +1,240 @@
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.H_title{
+    font-size: 57px;
+    font-weight: bold;
+}
+
+.H_label{
+    color: #505050;
+    font-size: 23px;
+}
+.H_Price{
+    font-size: 17.87px;
+}
+.H_desc{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+
+.H_description{
+    font-size: 18.49px;
+    font-weight: 300;
+}
+
+.H_ColorBox{
+    width: 38px;
+    height: 38px;
+
+}
+
+.H_ColorBox:active::hover{
+    border: 1px solid gray;
+    padding: 3px;
+}
+.H_ColorBox:active{
+    border: 1px solid gray;
+    padding: 3px;
+}
+
+.H_home{
+    padding: 15px;
+    /* height: 100vh; */
+}
+
+.H_flex{
+    display: flex;
+}
+
+.offerBtn{
+    border: 1px solid #333333;
+    width: fit-content;
+    padding: 14px;
+    border-radius: 29px;
+
+}
+
+.offerBtnv2{
+    /* border: 1px solid #333333; */
+    width: fit-content;
+    padding: 14px;
+    border-radius: 29px;
+
+}
+
+.H_homeContent{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.H_canvas{
+    height: 500px;
+    width: 500px;
+    /* background: red; */
+    /* width: -webkit-fill-available; */
+    /* background:ghostwhite; */
+    border-radius: 17px;
+    
+}
+
+.H_Item_Container_section{
+    /* background:linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(195,45,253,1) 100%) ;*/
+    /* background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%); */
+    background: ghostwhite;
+    width: 90%;
+    border-radius: 25px;
+    padding: 10px;
+    margin: auto;
+}
+.H_Item_Container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+
+}
+
+.H_Item_Container_left{
+    width: 103px;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px;
+}
+
+.H_Item_Container_right {
+    display: flex;
+    width: -webkit-fill-available;
+    /* align-items: center; */
+    /* background: radial-gradient(black, transparent); */
+}
+.H_Item_Container_right1 {
+    display: flex;
+    /* background: pink; */
+    width: 75%;
+}
+.H_Item_Container_right2 {
+    display: flex;
+    width: 25%;
+}
+
+.H_ItemBox {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.H_ItemBox_active{
+  
+    border: 2px solid #111;
+}
+
+.H_ItemBox_img{
+    width: 100%;
+    margin: auto;
+}
+
+.H_shadow{
+    box-shadow: 0 20px 27px 0 rgba(0,0,0,.05);
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+/* phone */
+@media only screen and (max-width: 900px) {
+    .H_homeContent {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .H_Item_Container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        /* height: 500px; */
+        flex-direction: column;
+    }
+    .H_Item_Container_left {
+        width: 103px;
+        /* background: red; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 4px;
+        align-items: center;
+        width: 100%;
+    }
+   
+    .H_Item_Container_right {
+        display: flex;
+        width: -webkit-fill-available;
+        /* background: radial-gradient(black, transparent); */
+        flex-direction: column;
+    }
+
+    .H_Item_Container_right1 {
+        display: flex;
+        /* background: pink; */
+        /* width: 75%; */
+        width: 100%;
+        height: 300px;
+    }
+
+    .H_Item_Container_right2 {
+        display: flex;
+        /* width: 25%; */
+        width: 100%;
+        height: 200px;
+    }
+
+    .H_canvas {
+        height: 500px;
+        /* width: 500px; */
+        width: 90%;
+        /* background: red; */
+        /* width: -webkit-fill-available; */
+        /* background: #dcdcdcde; */
+        border-radius: 17px;
+        margin: auto;
+    }
+    
+    .H_Item_Container_section{
+        height: 815px;
+    
+    }
+}
+

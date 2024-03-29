@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
 @import url("https://rsms.me/inter/inter.css");
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+canvas{
+  touch-action: none;
+}
 html {
     font-family: "Inter", sans-serif;
+    
   }
+main{
+  user-select: none;
+}
   
   @supports (font-variation-settings: normal) {
     html {
@@ -16,7 +24,7 @@ html {
   }
   
   .app {
-    @apply relative w-full h-screen overflow-hidden;
+    @apply relative w-full h-screen ;
   }
   
   .home {

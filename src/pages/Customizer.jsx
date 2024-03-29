@@ -41,36 +41,31 @@ const Customizer = () => {
       case "colorpicker":
         return <ColorPicker />;
       case "filepicker":
-        return <FilePicker file={file} setfile={setfile}
-        readFile={readFile}
-        />;
+        return <FilePicker file={file} setfile={setfile} readFile={readFile} />;
       case "aipicker":
-        return <AIPicker
-        prompt={prompt}
-        setPrompt={setPrompt}
-        generatingImg={generatingImg}
-        handleSubmit={handleSubmit}
-        
-        />;
+        return (
+          <AIPicker
+            prompt={prompt}
+            setPrompt={setPrompt}
+            generatingImg={generatingImg}
+            handleSubmit={handleSubmit}
+          />
+        );
       default:
         return null;
     }
   };
 
-  const handleSubmit=async (type)=>{
-    if(!prompt) return alert("Please enter a prompt")
-    try
-  {
-  }
-  catch(error){
-    alert(error)
-  }
-  finally{
-    setgeneratingImg(false);
-    setactiveEditorTab("")
-  }
-
-  }
+  const handleSubmit = async (type) => {
+    if (!prompt) return alert("Please enter a prompt");
+    try {
+    } catch (error) {
+      alert(error);
+    } finally {
+      setgeneratingImg(false);
+      setactiveEditorTab("");
+    }
+  };
   const handleDecals = (type, result) => {
     const decalType = DecalTypes[type];
     state[decalType.stateProperty] = result;
@@ -80,30 +75,33 @@ const Customizer = () => {
   };
 
   const handleActiveFilterTab = (tabName) => {
-    console.log("tabName",tabName)
+    console.log("tabName", tabName);
     switch (tabName) {
       case "logoShirt":
-          state.isLogoTexture = !activeFilterTab[tabName];
-          console.log("state.isLogoTexture",state.isLogoTexture,activeFilterTab[tabName] ,!activeFilterTab[tabName])
-          break;
+        state.isLogoTexture = !activeFilterTab[tabName];
+        console.log(
+          "state.isLogoTexture",
+          state.isLogoTexture,
+          activeFilterTab[tabName],
+          !activeFilterTab[tabName]
+        );
+        break;
       case "stylishShirt":
-          state.isFullTexture = !activeFilterTab[tabName];
-          console.log("state.isFullTexture ",state.isFullTexture)
-          break;
-      default :
-          state.isLogoTexture = true;
-          state.isFullTexture = false;
+        state.isFullTexture = !activeFilterTab[tabName];
+        console.log("state.isFullTexture ", state.isFullTexture);
+        break;
+      default:
+        state.isLogoTexture = true;
+        state.isFullTexture = false;
 
-         
-          break;
-
+        break;
     }
-    setactiveFilterTab((prev)=>{
-      return{
+    setactiveFilterTab((prev) => {
+      return {
         ...prev,
-        [tabName]:!prev[tabName]
-      }
-    })
+        [tabName]: !prev[tabName],
+      };
+    });
   };
 
   const readFile = (type) => {

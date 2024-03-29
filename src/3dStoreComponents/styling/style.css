@@ -1,0 +1,96 @@
+
+.couchcanvas{
+           /* padding: 37px; */
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+}
+.couchbox{
+       /* background: red; */
+       height: 410px;
+       display: flex;
+       width: 100%;
+       align-items: center;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+       /* overflow: scroll; */
+       /* border: 1px solid gainsboro; */
+       margin-top: 10px;
+       padding: 5px
+}
+
+.subheader{
+       display: flex;
+       align-items: center;
+       text-align: center;
+}
+
+.font{
+       font-size: 25px;
+
+}
+
+/* desktop */
+@media screen and (min-width: 801px) {
+
+       .title{
+              font-size: 1.7rem;
+
+       }
+       .chcontainer{
+              padding: 19px;
+       }
+      .couchboxConatiner {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              /* text-align: center; */
+              flex-wrap: wrap;
+       }
+       .textureContainerBtn {
+              width: 140px;
+
+              height: 65px;
+              margin: 5px;
+       }
+       .textureContainerBtn img{
+              width: 140px;
+
+              height: 65px;
+              margin: 5px;
+       }
+       .card{
+              box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07);
+    padding: 36px;
+       }
+
+}
+
+/* phone */
+/* @media screen and (max-width: 800px) {
+       .textureContainer{
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+       }
+       
+       .textureContainerBtn{
+              height: 49px;
+              width: 90px;
+              margin: 5px;
+              border-radius:5px;
+       }
+       
+       .textureContainerBtn img{
+              height: 49px;
+              width: 80px;
+              
+       }
+       .couchboxConatiner{
+              display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+       }
+} */

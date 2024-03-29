@@ -8,7 +8,11 @@ const state=proxy({
     isLogoTexture:true,
     isFullTexture:false,
     logoDecal:'./threejs.png',
-    fullDecal:'./react.png'
+    fullDecal:'./react.png',
+    couchTexture:'/darkSofaCover.jpg',
+    cusionTexture:'/cusion.jpg',
+    chairTextTure:'/cusion.jpg'
+
 })
 
 export default state;
